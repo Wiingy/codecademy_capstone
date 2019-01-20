@@ -159,9 +159,9 @@ class TomeRater(object):
             print("This user already exists")
         else:
             new_email = email + " "
-            list = [".com ", ".edu ", ".org "]
+            exts = [".com ", ".edu ", ".org "]
             if "@" in new_email:
-                for ext in list:
+                for ext in exts:
                     if ext in new_email:
                         self.users[new_user.email] = new_user
                         break
